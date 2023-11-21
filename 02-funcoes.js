@@ -52,3 +52,36 @@ console.log(resultado2);
 // console.log(exercicio01(valor1 = 100, valor2 = 30));
 
 // console.log(exercicio01(valor1 = 1000, valor2 = 300));
+
+
+/*  Sintaxe Arrow Function */
+const exemplo03 = () => {
+    console.log("Arrow Function");
+};
+
+exemplo03();
+
+//const saudacao = (cliente) => {
+   // console.log("Olá " + cliente);
+//};
+
+// Omitir os parêntes do parâmetro (SOMENTE QUANDO FOR 1)
+//const saudacao = cliente => {
+//    console.log("Olá " + cliente);
+//};
+
+// Omitir as {} (SOMENTE QUANDO FOR UMA ÚNICA INSTRUÇÃO)
+const saudacao = cliente => console.log("Olá " + cliente);
+
+saudacao("Fulano");
+saudacao("Beltrano");
+
+const calculeMetade = (valor) => {
+    return valor / 2;
+};
+
+let resultadoA = calculeMetade(100);
+let resultadoB = calculeMetade(666);
+
+console.log(resultadoA);
+console.log(resultadoB);
