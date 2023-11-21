@@ -23,14 +23,16 @@ exemplo02();
 /* Exercício
 1) Crie uma função (qualquer sintaxe) que receba dois valores numéricos, calcule a diferença entre eles e retorne o resultado.
 */
-function exercicio01(valor1, valor2){
+//function exercicio01(valor1, valor2){
     //1° Versão: Variável de escopo LOCAL
     // let resultado = valor1 - valor2;
     // return resultado;
 
     //2° Versão
-    return valor1 - valor2;
-}
+    //return valor1 - valor2;
+//}
+
+const exercicio01 =  (valor1, valor2) => valor1 - valor2;
 
 /*
 2) Chame esta função duas vezes passando valores diferentes e guardando-os em variáveis de escopo global.
@@ -76,12 +78,17 @@ const saudacao = cliente => console.log("Olá " + cliente);
 saudacao("Fulano");
 saudacao("Beltrano");
 
-const calculeMetade = (valor) => {
+//Arrow Function padrão com retorno EXPLÍCITO
+const calculeMetadeOriginal = (valor) => {
     return valor / 2;
-};
+}
+
+//Arrow Function com retorno IMPLÍCITO
+const calculeMetade = valor => valor / 2;
 
 let resultadoA = calculeMetade(100);
 let resultadoB = calculeMetade(666);
 
 console.log(resultadoA);
 console.log(resultadoB);
+
