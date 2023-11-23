@@ -24,3 +24,13 @@ console.log(titulos);
 
 const preco = cursos.map(preco => preco.preco * 0.9);
 console.log(preco);
+
+const cursosAtualizados = cursos.map((curso) => {
+    return{
+        ...curso,
+        preco:curso.preco * 0.9
+    }
+});
+
+console.log(cursosAtualizados);
+
