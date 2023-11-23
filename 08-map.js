@@ -1,5 +1,7 @@
+import cursos from "./modulos/cursos.js";
+
 /* map (mapear, mapeia - transformar em outra coisa) 
-Passa por elementos de um array e realiza operações em cada um deles através de uma função, gerando um novo array
+Passa por elementos de um array e realiza operações em cada um deles através de uma função(callback), gerando um novo array
 */
 
 // exemplo 1
@@ -8,3 +10,13 @@ console.log(numeros);
 const numerosDobrados = numeros.map( numero => numero * 2);
 
 console.log(numerosDobrados);
+
+console.log(cursos);
+
+// exemplo 2: gerar um novo array apenas com os nomes dos cursos
+
+const titulos = cursos.map( (curso) => {
+    return curso.titulo
+});
+
+console.log(titulos);

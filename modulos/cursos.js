@@ -43,4 +43,4 @@ const cursos = [
     },
 ];
 
-export default cursos:
+export default cursos;
