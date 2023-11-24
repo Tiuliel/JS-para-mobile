@@ -1,3 +1,4 @@
+import cursos from "./modulos/cursos.js"
 /* filter (filtrar) 
 Passa por elementos de um array (usando uma função callback) e 
 retornar valores de acordo com uma ou mais condições  gerando um novo array
@@ -30,3 +31,19 @@ const resultados = alunos.filter(aluno => aluno.startsWith("M") && aluno.endsWit
 console.log(resultados);
 
 console.log("---------------------------");
+
+// Filtrando cursos
+
+// Filtrando por cursos da categoria Design
+
+const cursoDesign = cursos.filter(curso => curso.categoria == "Design")
+console.log(cursoDesign);
+
+// Filtrando por cursos que NÃO SÃO sa categoria Design
+const cursosMenosDesign = cursos.filter(
+    curso => curso.categoria != "Design");
+
+    console.log(cursosMenosDesign);
+
+    const cursosFront = cursos.filter(curso => (curso.categoria === "Front-End" || curso.categoria === "Mobile")  && curso.preco > 600);
+    console.log(cursosFront);
