@@ -41,6 +41,12 @@ const cursos = [
         categoria: "Design",
         preco: 100
     },
+    {
+        id: 8,
+        titulo: "Produção caseira de Paçocas",
+        categoria: "Gastronômia",
+        preco: 1000
+    },
 ];
 
 export default cursos;
