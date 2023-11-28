@@ -1,6 +1,10 @@
 /*  Comunicação assíncrona (AJAX) para carregamento de dados usando fetch/then/catch */
 
-const apiUrl = `https://jsonplaceholder.typicode.com/users/30`;
+const apiUrl = `https://jsonplaceholder.typicode.com/users/3`;
+
+function acessaAPI(){
+
+
 
 // conecte/acesse
 fetch(apiUrl)
@@ -25,3 +29,6 @@ throw new Error(
 .catch(error => {
     console.error("Erro na operação: "+error.message)
 })
+}
+
+acessaAPI();
